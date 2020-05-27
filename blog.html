@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="'viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客详情</title>
+    <title>博客管理</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="./static/css/typo.css">
-    <link rel="stylesheet" href="./static/css/animate.css">
-    <link rel="stylesheet" href="./static/lib/prism/prism.css">
-    <link rel="stylesheet" href="./static/css/me.css">
+    <link rel="stylesheet" href="../static/css/me.css">
 </head>
 <body>
 
 <!-- 导航 -->
-<nav class="ui inverted attached segment m-padded-tb-mini">
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted stackable menu">
-            <h2 class="ui teal header item">Blog</h2>
-            <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
-            <div class="right m-item item m-mobile-hide">
-                <div class="ui icon inverted transparent input">
-                    <input type="text" placeholder="Search...">
-                    <i class="serach link icon"></i>
+            <div class="right m-item m-mobile-hide  menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="https://3.bp.blogspot.com/_wj9J8ebjbkk/SS5wwROZhxI/AAAAAAAAAAg/h7w2moC653o/s400/200810211021139693300.jpg">
+                        刘亦菲
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
                 </div>
             </div>
 
@@ -37,152 +38,83 @@
 
 </nav>
 
-<!-- 中间内容 -->
-<div class="m-container-small m-padded-tb-big animate__animated animate__fadeInDown">
+<div class="ui attached pointing menu">
     <div class="ui container">
-        <div class="ui top attached segment">
-            <div class="ui horizontal link list">
-                <div class="item">
-                    <img src="https://live.staticflickr.com/3181/2469304630_dd9dd9e93f_z.jpg" alt="" class="ui avatar image">
-                    <div class="content">
-                        <a href="#" class="header">袁帅</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <i class="calendar icon"> </i> 2020-5-20
-                </div>
-                <div class="item">
-                    <i class="eye icon"></i> 2435
-                </div>
-            </div>
+        <div class="right menu">
+            <a class="item">发布</a>
+            <a class="active teal item">列表</a>
         </div>
+    </div>
 
-        <div class="ui attached segment">
-            <!--图片区域-->
-            <img src="https://bestofcomicbooks.com/wp-content/uploads/2018/08/liu-yifei-nude.jpg" alt="" class="ui fluid rounded image">
-        </div>
-        <div class="ui attached segment">
-            <div class="ui right aligned basic segment">
-                <div class="ui orange basic label">原创</div>
-            </div>
-            <h2 class="ui center aligned header">关于刻意训练的清单</h2>
+</div>
 
-            <div id="content" class="typo typo-selection m-padded-lr-responsive m-padded-tb-large">
-                <pre><code class="language-css">p {color: red}</code></pre>
-                <p>雖然新冠疫情還只進行到第二幕，距離疫苗接種所承諾的大結局還有半年多，但我們已經可以確定它必然會帶給人類社會冷戰後30年來最重大的歷史轉折。我個人估計，如果中方能夠步步爲營、始終采行最佳策略，這個疫情危</p>
-                <h2>总结</h2>
-                <p> 爱是什么？
-                    一个精灵坐在碧绿的枝叶间沉思。
-                    风儿若有若无。
-                    一只鸟儿飞过来，停在枝上，望着远处将要成熟的稻田。
-                    精灵取出一束黄澄澄的稻谷问道：“你爱这稻谷吗？”
-                    “爱。”
-                    “为什么？”
-                    “它驱赶我的饥饿。”
-                </p>
-            </div>
-            <!--标签-->
-            <div class="m-padded-lr-responsive">
-                <div class="ui basic teal left pointing label">方法论</div>
-            </div>
-            <!--赞赏-->
-            <div class="ui center aligned basic segment"> <!--basic 去框-->
-                <button id="payButton" class="ui orange basic circular button">赞赏</button>
-            </div>
-            <div class="ui payQR flowing popup transition hidden">
-                <div class="ui orange basic label">
-                    <div class="ui images" style="font-size: inherit !important;">
-                        <div class="ui image">
-                            <img src="./static/images/qcode.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
-                            <div>支付宝</div>
-                        </div>
-                        <div class="ui image">
-                            <img src="./static/images/qcode.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
-                            <div>微信支付</div>
-                        </div>
-                    </div>
-
+<!-- 中间内容 -->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <form action="#" method="post" class="ui segment form"> <!-增加框框-->
+            <div class="inline fields">
+                <div class="field">   <!-防止stack出毛病-->
+                    <input type="text" name="title" placeholder="标题">
                 </div>
-            </div>
-
-        </div>
-        <div class="ui attached positive message">
-            <!--博客信息-->
-            <div class="ui middle aligned grid">
-                <div class="eleven wide column">
-                    <ui class="ui list">
-                        <li>作者： 袁帅（联系作者）</li>
-                        <li>发表时间： 2020-05-20 05：20</li>
-                        <li>版权声明： 袁帅（联系作者）</li>
-                        <li>公众号转载： 袁帅（联系作者）</li>
-                    </ui>
-                </div>
-                <div class="five wide column">
-                    <img src="./static/images/qcode.jpg" alt="" class="ui right floated aligned rounded bordered image" style="width: 110px">
-
-                </div>
-            </div>
-        </div>
-        <div id="comment-container" class="ui bottom attached segment">
-            <!--留言区域列表-->
-            <div class="ui teal segment">
-                <div class="ui threaded comments">
-                    <h3 class="ui dividing header">Comments</h3>
-                    <div class="comment">
-                        <a class="avatar">
-                            <img src="https://i.pinimg.com/originals/b9/8a/c7/b98ac7732dc99dedfe234b31db80b2d6.png">
-                        </a>
-                        <div class="content">
-                            <a class="author">Matt</a>
-                            <div class="metadata">
-                                <span class="date">Today at 0：20PM</span>
-                            </div>
-                            <div class="text">How artistic!</div>
-                            <div class="actions">
-                                <a class="reply">Reply</a>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <a class="avatar">
-                                <img src="https://s3.amazonaws.com/rm3.photos.prod.readmedia.com/students/2652365/medium/photo?1487403914">
-                            </a>
-                            <div class="content">
-                                <a class="author">Haley</a>
-                                <div class="metadata">
-                                    <span class="date">Today at 0：20PM</span>
-                                </div>
-                                <div class="text">How artistic!</div>
-                                <div class="actions">
-                                    <a class="reply">Reply</a>
-                                </div>
-                            </div>
+                <div class="field">
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="type">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">分类</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">错误日志</div>
+                            <div class="item" data-value="2">开发者手册</div>
                         </div>
                     </div>
                 </div>
-                <div class="ui form">
-                    <div class="field">
-                        <textarea name="content" placeholder="input your comments..."></textarea>
-                    </div>
-                    <div class="fields">
-                        <div class="field m-mobile-wide m-margin-bottom-small">
-                            <div class="ui left icon input">
-                                <i class="user icon"></i>
-                                <input type="text" name="nickname" placeholder="姓名">
-                            </div>
-                        </div>
-                        <div class="field m-mobile-wide m-margin-bottom-small">
-                            <div class="ui left icon input">
-                                <i class="mail icon"></i>
-                                <input type="text" name="email" placeholder="邮箱">
-                            </div>
-                        </div>
-                        <div class="field m-mobile-wide m-margin-bottom-small">
-                            <button class="ui teal button"><i class="edit icon"></i>发布</button>
-                        </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" name="recommend">
+                        <label for="recommend">推荐</label>
                     </div>
                 </div>
+                <div class="field">
+                    <button class="ui mini teal basic button"><i class="search icon"></i>搜索 </button>
+                </div>
+
             </div>
-        </div>
+        </form>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>标题</th>
+                    <th>类型</th>
+                    <th>推荐</th>
+                    <th>更新时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>练习清单</td>
+                    <td>认知升级</td>
+                    <td>是</td>
+                    <td>05/21/2020 05：20</td>
+                    <td>
+                        <a href="#" class="ui mini teal basic button">编辑</a>
+                        <a href="#" class="ui mini red basic button">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui mini pagination menu">
+                            <a class="item">上一页</a>
+                            <a class="item">下一页</a>
+                        </div>
+                        <a class="ui mini right floated teal basic button">新增</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 </div>
     <br>
@@ -194,21 +126,8 @@
     <br>
     <br>
     <br>
+    <br>
 
-<div class="m-padded m-fixed m-right-bottom">
-    <div class="ui vertical icon buttons">
-        <button type="button" class="ui teal button"> 目录</button>
-        <a href="#comment-container" class="ui teal button"> 留言</a>
-        <button class="ui icon button"><i class="weixin icon"></i> </button>
-        <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
-    </div>
-</div>
-<br>
-
-
-<div class="ui toc-container flowing popup transition hidden">
-    生成的目录
-</div>
 
 
 <!-- footer -->
@@ -216,7 +135,7 @@
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
             <div class="three wide column">
-                <img src="./static/images/qcode.jpg" class="ui rounded image" alt="" style="width: 110px">
+                <img src="../static/images/qcode.jpg" class="ui rounded image" alt="" style="width: 110px">
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
@@ -245,17 +164,15 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-<script src="./static/lib/prism/prism.js"></script>
+
 <script>
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     });
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    })
 
-    $('#payButton').popup({
-        popup: $('.payQR.popup'),
-        on: 'click',
-        position: 'bottom center'
-    });
 </script>
 </body>
 </html>
